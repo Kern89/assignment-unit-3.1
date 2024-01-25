@@ -5,13 +5,13 @@ console.log('--- 1. Practice creating arrays ---');
 
 // Example: Creating an array of animals
 let animalArray = ['fish', 'cat', 'bird', 'dog'];
-console.log('Animals are: ', animalArray);
+console.log('Animals are:', animalArray);
 
 // 1. TODO: Make an array `favoriteFoods` with some favorite foods.
 //    Be sure to console.log your array of foods to the console with
 //    a message, similar to the example above.
 let favoriteFoods = ['tacos', 'baba ganoush', 'pasta', 'pesto', 'garlic', 'hot sauce'];
-console.log('My favorite foods are: ', favoriteFoods);
+console.log('My favorite foods are:', favoriteFoods);
 // Array.length: A property that tells you how many items are in a given array.
 console.log('--- 2. Length of an array ---');
 
@@ -93,6 +93,9 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      Don't forget! Use console.log to verify that the `colors`
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
+let lastColor = colors.pop();
+console.log('Removed the last color,', lastColor + ', from colors');
+console.log('the remaining colors are:', colors);
 
 
 // Example: Remove the first animal using the Array.shift method.
@@ -103,7 +106,9 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
-
+let firstColor = colors.shift();
+console.log(firstColor, 'was removed from colors');
+console.log('remaining colors are:', colors);
 
 
 
@@ -113,7 +118,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+gems[1] = 'Tourmaline';
+console.log(gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
